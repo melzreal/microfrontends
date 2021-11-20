@@ -11,7 +11,7 @@ const common_1 = require("@nestjs/common");
 const serve_static_1 = require("@nestjs/serve-static");
 const path_1 = require("path");
 const authorized_module_1 = require("./modules/authorized/authorized.module");
-const unauthorized_module_1 = require("./modules/unauthorized/unauthorized.module");
+const products_module_1 = require("./modules/products/products.module");
 const app_controller_1 = require("./app.controller");
 const auth_module_1 = require("./auth/auth.module");
 const users_service_1 = require("./users/users.service");
@@ -26,7 +26,7 @@ AppModule = __decorate([
                 rootPath: (0, path_1.join)(__dirname, '..', 'public'),
             }),
             authorized_module_1.AuthorizedModule,
-            unauthorized_module_1.UnauthorizedModule,
+            products_module_1.ProductsModule,
             auth_module_1.AuthModule,
         ],
     })
